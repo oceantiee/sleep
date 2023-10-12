@@ -1,0 +1,908 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Sleep Story</title>
+    <meta charset="utf-8">
+    <meta name="keywords" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="shortcut icon" href="images/favicons/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="images/favicons/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicons/apple-touch-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="images/favicons/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="images/favicons/android-chrome-96x96.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicons/favicon-16x16.png">
+    <link rel="manifest" href="images/favicons/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="images/favicons/mstile-144x144.png">
+    <meta name="msapplication-config" content="images/favicons/browserconfig.xml">
+    <meta name="theme-color" content="#fff">
+    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#101014">
+    <link rel="stylesheet" href="css/main.min.css">
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__wrap"><a class="custom-logo" href="./index.html"><img src="images/app-icon.svg" alt="Sleep Stories Logo">
+            <div class="custom-logo__info"><span class="custom-logo__tagline">Get the app</span><span class="custom-logo__title">Sleep Story</span></div></a>
+          <nav class="menu"> 
+            <ul class="menu__list list-reset">
+              <li class="menu__item"><a class="menu__link button button--active" href="#"> 
+                  <svg class="icon" width="24" height="24" viewBox="0 0 24 24">
+                    <use xlink:href="images/sprites/main.stack.svg#image-moon"></use>
+                  </svg>Sleep Stories</a></li>
+              <li class="menu__item"><a class="menu__link button" href="#"> 
+                  <svg class="icon" width="24" height="24" viewBox="0 0 24 24">
+                    <use xlink:href="images/sprites/main.stack.svg#image-meditation"></use>
+                  </svg>Meditation</a></li>
+            </ul>
+          </nav>
+          <div class="user-nav"><a class="button" href="#signIn" data-signin>Sign in</a><a class="button button--accent" href="#premium" data-premium> <svg class="icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g filter="url(#b)" clip-path="url(#a)"><path d="M11.103 3.817a1 1 0 0 1 1.794 0l1.81 3.666a1 1 0 0 0 .752.548l4.046.587a1 1 0 0 1 .555 1.706l-2.928 2.854a1 1 0 0 0-.288.885l.691 4.03a1 1 0 0 1-1.45 1.054l-3.62-1.902a1 1 0 0 0-.93 0l-3.62 1.902a1 1 0 0 1-1.45-1.054l.69-4.03a1 1 0 0 0-.287-.885L3.94 10.324a1 1 0 0 1 .555-1.706l4.046-.587a1 1 0 0 0 .753-.548l1.81-3.666Z" fill="url(#c)"/></g><defs><linearGradient id="c" x1="4" y1="4" x2="20" y2="20" gradientUnits="userSpaceOnUse"><stop offset="100" stop-color="#FFEB45"/><stop offset="1" stop-color="#FFC545"/></linearGradient><clipPath id="a"><path fill="#fff" d="M0 0h24v24H0z"/></clipPath><filter id="b" x="-.363" y=".26" width="24.727" height="24.005" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feColorMatrix in="SourceAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/><feOffset dy="1"/><feGaussianBlur stdDeviation="2"/><feComposite in2="hardAlpha" operator="out"/><feColorMatrix values="0 0 0 0 1 0 0 0 0 0.921569 0 0 0 0 0.270588 0 0 0 0.16 0"/><feBlend in2="BackgroundImageFix" result="effect1_dropShadow_1001_6596"/><feBlend in="SourceGraphic" in2="effect1_dropShadow_1001_6596" result="shape"/></filter></defs></svg>Get Premium</a>
+            <div class="user-nav__button"> <span> </span></div>
+            <div class="user-nav__wrap"> <a class="user-nav__link user-nav__menu user-nav__menu--active" href="#"> 
+                <div class="user-nav__icon">
+                  <svg class="icon" width="24" height="24" viewBox="0 0 24 24">
+                    <use xlink:href="images/sprites/main.stack.svg#image-moon"></use>
+                  </svg>
+                </div>Sleep Stories</a><a class="user-nav__link user-nav__menu" href="#"> 
+                <div class="user-nav__icon">
+                  <svg class="icon" width="24" height="24" viewBox="0 0 24 24">
+                    <use xlink:href="images/sprites/main.stack.svg#image-meditation"></use>
+                  </svg>
+                </div>Meditation</a><a class="user-nav__link" href="#premium" data-premium> 
+                <div class="user-nav__icon"><svg class="icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g filter="url(#b2)" clip-path="url(#a2)"><path d="M11.103 3.817a1 1 0 0 1 1.794 0l1.81 3.666a1 1 0 0 0 .752.548l4.046.587a1 1 0 0 1 .555 1.706l-2.928 2.854a1 1 0 0 0-.288.885l.691 4.03a1 1 0 0 1-1.45 1.054l-3.62-1.902a1 1 0 0 0-.93 0l-3.62 1.902a1 1 0 0 1-1.45-1.054l.69-4.03a1 1 0 0 0-.287-.885L3.94 10.324a1 1 0 0 1 .555-1.706l4.046-.587a1 1 0 0 0 .753-.548l1.81-3.666Z" fill="url(#c2)"/></g><defs><linearGradient id="c2" x1="4" y1="4" x2="20" y2="20" gradientUnits="userSpaceOnUse"><stop offset="100" stop-color="#FFEB45"/><stop offset="1" stop-color="#FFC545"/></linearGradient><clipPath id="a2"><path fill="#fff" d="M0 0h24v24H0z"/></clipPath><filter id="b2" x="-.363" y=".26" width="24.727" height="24.005" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feColorMatrix in="SourceAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/><feOffset dy="1"/><feGaussianBlur stdDeviation="2"/><feComposite in2="hardAlpha" operator="out"/><feColorMatrix values="0 0 0 0 1 0 0 0 0 0.921569 0 0 0 0 0.270588 0 0 0 0.16 0"/><feBlend in2="BackgroundImageFix" result="effect1_dropShadow_1001_6596"/><feBlend in="SourceGraphic" in2="effect1_dropShadow_1001_6596" result="shape"/></filter></defs></svg></div>Get Premium</a><a class="user-nav__link" href="#signIn"> 
+                <div class="user-nav__icon">
+                  <svg class="icon" width="24" height="24" viewBox="0 0 24 24">
+                    <use xlink:href="images/sprites/main.stack.svg#image-profile"></use>
+                  </svg>
+                </div>Sign in</a></div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="main"> 
+      <section class="featured-cards">
+        <div class="container"> 
+          <h1 class="featured-cards__title">Sleep Story</h1>
+          <div class="featured-cards__slider swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="card card--featured">
+                  <div class="card__media"> <span class="card__star"></span>
+                    <picture class="picture">
+                      <source srcset="images/cards/widecard1.webp, images/cards/widecard1@2x.webp 2x" type="image/webp"/><img src="images/cards/widecard1.jpg" srcset="images/cards/widecard1.jpg, images/cards/widecard1@2x.jpg 2x" alt=""/>
+                    </picture><span class="card__control"></span>
+                  </div>
+                  <div class="card__main">
+                    <h2 class="card__title">1Sound Title</h2><span class="card__subtitle">Artist Name</span>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide"> 
+                <div class="card card--featured">
+                  <div class="card__media"><span class="card__star"> </span>
+                    <picture class="picture">
+                      <source srcset="images/cards/widecard2.webp, images/cards/widecard2@2x.webp 2x" type="image/webp"/><img src="images/cards/widecard2.jpg" srcset="images/cards/widecard2.jpg, images/cards/widecard2@2x.jpg 2x" alt=""/>
+                    </picture><span class="card__control"></span>
+                  </div>
+                  <div class="card__main">
+                    <h2 class="card__title">2Sound Title</h2><span class="card__subtitle">Artist Name</span>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide"> 
+                <div class="card card--featured">
+                  <div class="card__media"><span class="card__star"> </span>
+                    <picture class="picture">
+                      <source srcset="images/cards/widecard3.webp, images/cards/widecard3@2x.webp 2x" type="image/webp"/><img src="images/cards/widecard3.jpg" srcset="images/cards/widecard3.jpg, images/cards/widecard3@2x.jpg 2x" alt=""/>
+                    </picture><span class="card__control"></span>
+                  </div>
+                  <div class="card__main">
+                    <h2 class="card__title">3Sound Title</h2><span class="card__subtitle">Artist Name</span>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide"> 
+                <div class="card card--featured">
+                  <div class="card__media"><span class="card__star"> </span>
+                    <picture class="picture">
+                      <source srcset="images/cards/widecard1.webp, images/cards/widecard1@2x.webp 2x" type="image/webp"/><img src="images/cards/widecard1.jpg" srcset="images/cards/widecard1.jpg, images/cards/widecard1@2x.jpg 2x" alt=""/>
+                    </picture><span class="card__control"></span>
+                  </div>
+                  <div class="card__main">
+                    <h2 class="card__title">1copy Sound Title</h2><span class="card__subtitle">Artist Name</span>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide"> 
+                <div class="card card--featured">
+                  <div class="card__media"><span class="card__star"> </span>
+                    <picture class="picture">
+                      <source srcset="images/cards/widecard2.webp, images/cards/widecard2@2x.webp 2x" type="image/webp"/><img src="images/cards/widecard2.jpg" srcset="images/cards/widecard2.jpg, images/cards/widecard2@2x.jpg 2x" alt=""/>
+                    </picture><span class="card__control"></span>
+                  </div>
+                  <div class="card__main">
+                    <h2 class="card__title">2copy Sound Title</h2><span class="card__subtitle">Artist Name</span>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide"> 
+                <div class="card card--featured">
+                  <div class="card__media"><span class="card__star"> </span>
+                    <picture class="picture">
+                      <source srcset="images/cards/widecard5.webp, images/cards/widecard5@2x.webp 2x" type="image/webp"/><img src="images/cards/widecard5.jpg" srcset="images/cards/widecard5.jpg, images/cards/widecard5@2x.jpg 2x" alt=""/>
+                    </picture><span class="card__control"></span>
+                  </div>
+                  <div class="card__main">
+                    <h2 class="card__title">5Sound Title</h2><span class="card__subtitle">Artist Name</span>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide"> 
+                <div class="card card--featured">
+                  <div class="card__media"><span class="card__star"> </span>
+                    <picture class="picture">
+                      <source srcset="images/cards/widecard4.webp, images/cards/widecard4@2x.webp 2x" type="image/webp"/><img src="images/cards/widecard4.jpg" srcset="images/cards/widecard4.jpg, images/cards/widecard4@2x.jpg 2x" alt=""/>
+                    </picture><span class="card__control"></span>
+                  </div>
+                  <div class="card__main">
+                    <h2 class="card__title">4Sound Title</h2><span class="card__subtitle">Artist Name</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="arrows"> 
+              <div class="arrows__item arrows__item--prev">
+                <svg class="icon" width="24" height="24" viewBox="0 0 24 24">
+                  <use xlink:href="images/sprites/main.stack.svg#image-angle"></use>
+                </svg>
+              </div>
+              <div class="arrows__item arrows__item--next">
+                <svg class="icon" width="24" height="24" viewBox="0 0 24 24">
+                  <use xlink:href="images/sprites/main.stack.svg#image-angle"></use>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="slider-section">
+        <div class="container"> 
+          <div class="slider-section__wrap">
+            <div class="slider-section__head"> 
+              <h2 class="slider-section__title">Recently Added</h2>
+              <div class="arrows"> 
+                <div class="arrows__item arrows__item--prev">
+                  <svg class="icon" width="24" height="24" viewBox="0 0 24 24">
+                    <use xlink:href="images/sprites/main.stack.svg#image-angle"></use>
+                  </svg>
+                </div>
+                <div class="arrows__item arrows__item--next">
+                  <svg class="icon" width="24" height="24" viewBox="0 0 24 24">
+                    <use xlink:href="images/sprites/main.stack.svg#image-angle"></use>
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="slider-section__main swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide"> 
+                  <div class="card">
+                    <div class="card__media"> <span class="card__star"></span>
+                      <picture class="picture">
+                        <source srcset="images/cards/card1.webp, images/cards/card1@2x.webp 2x" type="image/webp"/><img src="images/cards/card1.jpg" srcset="images/cards/card1.jpg, images/cards/card1@2x.jpg 2x" alt=""/>
+                      </picture><span class="card__control"></span>
+                    </div>
+                    <h3 class="card__title">Sound Title</h3><span class="card__subtitle">Artist Name</span>
+                  </div>
+                </div>
+                <div class="swiper-slide"> 
+                  <div class="card"> 
+                    <div class="card__media"> <span class="card__star"></span>
+                      <picture class="picture">
+                        <source srcset="images/cards/card2.webp, images/cards/card2@2x.webp 2x" type="image/webp"/><img src="images/cards/card2.jpg" srcset="images/cards/card2.jpg, images/cards/card2@2x.jpg 2x" alt=""/>
+                      </picture><span class="card__control"></span>
+                    </div>
+                    <h3 class="card__title">Sound Title</h3><span class="card__subtitle">Artist Name</span>
+                  </div>
+                </div>
+                <div class="swiper-slide"> 
+                  <div class="card"> 
+                    <div class="card__media card__media--premium"><span class="card__star"></span>
+                      <picture class="picture">
+                        <source srcset="images/cards/card3.webp, images/cards/card3@2x.webp 2x" type="image/webp"/><img src="images/cards/card3.jpg" srcset="images/cards/card3.jpg, images/cards/card3@2x.jpg 2x" alt=""/>
+                      </picture><span class="card__control"></span>
+                    </div>
+                    <h3 class="card__title">Sound Title</h3><span class="card__subtitle">Artist Name</span>
+                  </div>
+                </div>
+                <div class="swiper-slide"> 
+                  <div class="card"> 
+                    <div class="card__media card__media--premium"> <span class="card__star"></span>
+                      <picture class="picture">
+                        <source srcset="images/cards/card4.webp, images/cards/card4@2x.webp 2x" type="image/webp"/><img src="images/cards/card4.jpg" srcset="images/cards/card4.jpg, images/cards/card4@2x.jpg 2x" alt=""/>
+                      </picture><span class="card__control"></span>
+                    </div>
+                    <h3 class="card__title">Sound Title</h3><span class="card__subtitle">Artist Name</span>
+                  </div>
+                </div>
+                <div class="swiper-slide"> 
+                  <div class="card"> 
+                    <div class="card__media card__media--premium"><span class="card__star"></span>
+                      <picture class="picture">
+                        <source srcset="images/cards/card5.webp, images/cards/card5@2x.webp 2x" type="image/webp"/><img src="images/cards/card5.jpg" srcset="images/cards/card5.jpg, images/cards/card5@2x.jpg 2x" alt=""/>
+                      </picture><span class="card__control"></span>
+                    </div>
+                    <h3 class="card__title">Sound Title</h3><span class="card__subtitle">Artist Name</span>
+                  </div>
+                </div>
+                <div class="swiper-slide"> 
+                  <div class="card"> 
+                    <div class="card__media"> <span class="card__star"></span>
+                      <picture class="picture">
+                        <source srcset="images/cards/card6.webp, images/cards/card6@2x.webp 2x" type="image/webp"/><img src="images/cards/card6.jpg" srcset="images/cards/card6.jpg, images/cards/card6@2x.jpg 2x" alt=""/>
+                      </picture><span class="card__control"></span>
+                    </div>
+                    <h3 class="card__title">Sound Title</h3><span class="card__subtitle">Artist Name</span>
+                  </div>
+                </div>
+                <div class="swiper-slide"> 
+                  <div class="card"> 
+                    <div class="card__media"> <span class="card__star"></span>
+                      <picture class="picture">
+                        <source srcset="images/cards/card7.webp, images/cards/card7@2x.webp 2x" type="image/webp"/><img src="images/cards/card7.jpg" srcset="images/cards/card7.jpg, images/cards/card7@2x.jpg 2x" alt=""/>
+                      </picture><span class="card__control"></span>
+                    </div>
+                    <h3 class="card__title">Sound Title</h3><span class="card__subtitle">Artist Name</span>
+                  </div>
+                </div>
+                <div class="swiper-slide"> 
+                  <div class="card"> 
+                    <div class="card__media"> <span class="card__star"></span>
+                      <picture class="picture">
+                        <source srcset="images/cards/card1.webp, images/cards/card1@2x.webp 2x" type="image/webp"/><img src="images/cards/card1.jpg" srcset="images/cards/card1.jpg, images/cards/card1@2x.jpg 2x" alt=""/>
+                      </picture><span class="card__control"></span>
+                    </div>
+                    <h3 class="card__title">Sound Title</h3><span class="card__subtitle">Artist Name</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="slider-section">
+        <div class="container"> 
+          <div class="slider-section__wrap">
+            <div class="slider-section__head"> 
+              <h2 class="slider-section__title">Travel</h2>
+              <div class="arrows"> 
+                <div class="arrows__item arrows__item--prev">
+                  <svg class="icon" width="24" height="24" viewBox="0 0 24 24">
+                    <use xlink:href="images/sprites/main.stack.svg#image-angle"></use>
+                  </svg>
+                </div>
+                <div class="arrows__item arrows__item--next">
+                  <svg class="icon" width="24" height="24" viewBox="0 0 24 24">
+                    <use xlink:href="images/sprites/main.stack.svg#image-angle"></use>
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="slider-section__main swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide"> 
+                  <div class="card"> 
+                    <div class="card__media"> <span class="card__star"></span>
+                      <picture class="picture">
+                        <source srcset="images/cards/card8.webp, images/cards/card8@2x.webp 2x" type="image/webp"/><img src="images/cards/card8.jpg" srcset="images/cards/card8.jpg, images/cards/card8@2x.jpg 2x" alt=""/>
+                      </picture><span class="card__control"></span>
+                    </div>
+                    <h3 class="card__title">Sound Title</h3><span class="card__subtitle">Artist Name</span>
+                  </div>
+                </div>
+                <div class="swiper-slide"> 
+                  <div class="card"> 
+                    <div class="card__media card__media--premium"><span class="card__star"></span>
+                      <picture class="picture">
+                        <source srcset="images/cards/card9.webp, images/cards/card9@2x.webp 2x" type="image/webp"/><img src="images/cards/card9.jpg" srcset="images/cards/card9.jpg, images/cards/card9@2x.jpg 2x" alt=""/>
+                      </picture><span class="card__control"></span>
+                    </div>
+                    <h3 class="card__title">Sound Title</h3><span class="card__subtitle">Artist Name</span>
+                  </div>
+                </div>
+                <div class="swiper-slide"> 
+                  <div class="card"> 
+                    <div class="card__media"> <span class="card__star"></span>
+                      <picture class="picture">
+                        <source srcset="images/cards/card10.webp, images/cards/card10@2x.webp 2x" type="image/webp"/><img src="images/cards/card10.jpg" srcset="images/cards/card10.jpg, images/cards/card10@2x.jpg 2x" alt=""/>
+                      </picture><span class="card__control"></span>
+                    </div>
+                    <h3 class="card__title">Sound Title</h3><span class="card__subtitle">Artist Name</span>
+                  </div>
+                </div>
+                <div class="swiper-slide"> 
+                  <div class="card"> 
+                    <div class="card__media"> <span class="card__star"></span>
+                      <picture class="picture">
+                        <source srcset="images/cards/card11.webp, images/cards/card11@2x.webp 2x" type="image/webp"/><img src="images/cards/card11.jpg" srcset="images/cards/card11.jpg, images/cards/card11@2x.jpg 2x" alt=""/>
+                      </picture><span class="card__control"></span>
+                    </div>
+                    <h3 class="card__title">Sound Title</h3><span class="card__subtitle">Artist Name</span>
+                  </div>
+                </div>
+                <div class="swiper-slide"> 
+                  <div class="card"> 
+                    <div class="card__media card__media--premium"> <span class="card__star"></span>
+                      <picture class="picture">
+                        <source srcset="images/cards/card12.webp, images/cards/card12@2x.webp 2x" type="image/webp"/><img src="images/cards/card12.jpg" srcset="images/cards/card12.jpg, images/cards/card12@2x.jpg 2x" alt=""/>
+                      </picture><span class="card__control"></span>
+                    </div>
+                    <h3 class="card__title">Sound Title</h3><span class="card__subtitle">Artist Name</span>
+                  </div>
+                </div>
+                <div class="swiper-slide"> 
+                  <div class="card"> 
+                    <div class="card__media"> <span class="card__star"></span>
+                      <picture class="picture">
+                        <source srcset="images/cards/card13.webp, images/cards/card13@2x.webp 2x" type="image/webp"/><img src="images/cards/card13.jpg" srcset="images/cards/card13.jpg, images/cards/card13@2x.jpg 2x" alt=""/>
+                      </picture><span class="card__control"></span>
+                    </div>
+                    <h3 class="card__title">Sound Title</h3><span class="card__subtitle">Artist Name</span>
+                  </div>
+                </div>
+                <div class="swiper-slide"> 
+                  <div class="card"> 
+                    <div class="card__media"> <span class="card__star"></span>
+                      <picture class="picture">
+                        <source srcset="images/cards/card1.webp, images/cards/card1@2x.webp 2x" type="image/webp"/><img src="images/cards/card1.jpg" srcset="images/cards/card1.jpg, images/cards/card1@2x.jpg 2x" alt=""/>
+                      </picture><span class="card__control"></span>
+                    </div>
+                    <h3 class="card__title">Sound Title</h3><span class="card__subtitle">Artist Name</span>
+                  </div>
+                </div>
+                <div class="swiper-slide"> 
+                  <div class="card"> 
+                    <div class="card__media"> <span class="card__star"></span>
+                      <picture class="picture">
+                        <source srcset="images/cards/card8.webp, images/cards/card8@2x.webp 2x" type="image/webp"/><img src="images/cards/card8.jpg" srcset="images/cards/card8.jpg, images/cards/card8@2x.jpg 2x" alt=""/>
+                      </picture><span class="card__control"></span>
+                    </div>
+                    <h3 class="card__title">Sound Title</h3><span class="card__subtitle">Artist Name</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="slider-section">
+        <div class="container"> 
+          <div class="slider-section__wrap">
+            <div class="slider-section__head"> 
+              <h2 class="slider-section__title">Women in Islam</h2>
+              <div class="arrows"> 
+                <div class="arrows__item arrows__item--prev">
+                  <svg class="icon" width="24" height="24" viewBox="0 0 24 24">
+                    <use xlink:href="images/sprites/main.stack.svg#image-angle"></use>
+                  </svg>
+                </div>
+                <div class="arrows__item arrows__item--next">
+                  <svg class="icon" width="24" height="24" viewBox="0 0 24 24">
+                    <use xlink:href="images/sprites/main.stack.svg#image-angle"></use>
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="slider-section__main swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide"> 
+                  <div class="card"> 
+                    <div class="card__media"> <span class="card__star"></span>
+                      <picture class="picture">
+                        <source srcset="images/cards/card14.webp, images/cards/card14@2x.webp 2x" type="image/webp"/><img src="images/cards/card14.jpg" srcset="images/cards/card14.jpg, images/cards/card14@2x.jpg 2x" alt=""/>
+                      </picture><span class="card__control"></span>
+                    </div>
+                    <h3 class="card__title">Sound Title</h3><span class="card__subtitle">Artist Name</span>
+                  </div>
+                </div>
+                <div class="swiper-slide"> 
+                  <div class="card"> 
+                    <div class="card__media card__media--premium"><span class="card__star"></span>
+                      <picture class="picture">
+                        <source srcset="images/cards/card15.webp, images/cards/card15@2x.webp 2x" type="image/webp"/><img src="images/cards/card15.jpg" srcset="images/cards/card15.jpg, images/cards/card15@2x.jpg 2x" alt=""/>
+                      </picture><span class="card__control"></span>
+                    </div>
+                    <h3 class="card__title">Sound Title</h3><span class="card__subtitle">Artist Name</span>
+                  </div>
+                </div>
+                <div class="swiper-slide"> 
+                  <div class="card"> 
+                    <div class="card__media card__media--premium"><span class="card__star"></span>
+                      <picture class="picture">
+                        <source srcset="images/cards/card16.webp, images/cards/card16@2x.webp 2x" type="image/webp"/><img src="images/cards/card16.jpg" srcset="images/cards/card16.jpg, images/cards/card16@2x.jpg 2x" alt=""/>
+                      </picture><span class="card__control"></span>
+                    </div>
+                    <h3 class="card__title">Sound Title</h3><span class="card__subtitle">Artist Name</span>
+                  </div>
+                </div>
+                <div class="swiper-slide"> 
+                  <div class="card"> 
+                    <div class="card__media"> <span class="card__star"></span>
+                      <picture class="picture">
+                        <source srcset="images/cards/card17.webp, images/cards/card17@2x.webp 2x" type="image/webp"/><img src="images/cards/card17.jpg" srcset="images/cards/card17.jpg, images/cards/card17@2x.jpg 2x" alt=""/>
+                      </picture><span class="card__control"></span>
+                    </div>
+                    <h3 class="card__title">Sound Title</h3><span class="card__subtitle">Artist Name</span>
+                  </div>
+                </div>
+                <div class="swiper-slide"> 
+                  <div class="card"> 
+                    <div class="card__media"><span class="card__star"></span>
+                      <picture class="picture">
+                        <source srcset="images/cards/card18.webp, images/cards/card18@2x.webp 2x" type="image/webp"/><img src="images/cards/card18.jpg" srcset="images/cards/card18.jpg, images/cards/card18@2x.jpg 2x" alt=""/>
+                      </picture><span class="card__control"></span>
+                    </div>
+                    <h3 class="card__title">Sound Title</h3><span class="card__subtitle">Artist Name</span>
+                  </div>
+                </div>
+                <div class="swiper-slide"> 
+                  <div class="card"> 
+                    <div class="card__media card__media--premium"><span class="card__star"></span>
+                      <picture class="picture">
+                        <source srcset="images/cards/card19.webp, images/cards/card19@2x.webp 2x" type="image/webp"/><img src="images/cards/card19.jpg" srcset="images/cards/card19.jpg, images/cards/card19@2x.jpg 2x" alt=""/>
+                      </picture><span class="card__control"></span>
+                    </div>
+                    <h3 class="card__title">Sound Title</h3><span class="card__subtitle">Artist Name</span>
+                  </div>
+                </div>
+                <div class="swiper-slide"> 
+                  <div class="card"> 
+                    <div class="card__media"><span class="card__star"></span>
+                      <picture class="picture">
+                        <source srcset="images/cards/card20.webp, images/cards/card20@2x.webp 2x" type="image/webp"/><img src="images/cards/card20.jpg" srcset="images/cards/card20.jpg, images/cards/card20@2x.jpg 2x" alt=""/>
+                      </picture><span class="card__control"></span>
+                    </div>
+                    <h3 class="card__title">Sound Title</h3><span class="card__subtitle">Artist Name</span>
+                  </div>
+                </div>
+                <div class="swiper-slide"> 
+                  <div class="card"> 
+                    <div class="card__media"> <span class="card__star"></span>
+                      <picture class="picture">
+                        <source srcset="images/cards/card14.webp, images/cards/card14@2x.webp 2x" type="image/webp"/><img src="images/cards/card14.jpg" srcset="images/cards/card14.jpg, images/cards/card14@2x.jpg 2x" alt=""/>
+                      </picture><span class="card__control"></span>
+                    </div>
+                    <h3 class="card__title">Sound Title</h3><span class="card__subtitle">Artist Name</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="signIn popup" id="signIn">
+        <div class="popup__control popup__close"> 
+          <svg class="icon" width="16" height="16" viewBox="0 0 16 16">
+            <use xlink:href="images/sprites/main.stack.svg#image-cross"></use>
+          </svg>
+        </div>
+        <div class="popup__main"> 
+          <div class="popup__logo"><img src="images/app-icon.svg" alt="Sleep Stories Logo"></div>
+          <div class="popup__box"><span class="popup__title">Sign in</span>
+            <div class="popup__info">
+              <p>Sign into your account to listen on all devices</p>
+            </div>
+            <div class="popup__buttons"> <a class="button button--apple" href="#"> 
+                <svg class="icon" width="24" height="24" viewBox="0 0 24 24">
+                  <use xlink:href="images/sprites/main.stack.svg#image-apple-logo"></use>
+                </svg>Sign in with Apple</a><a class="button button--google" href="#">
+                <svg class="icon" width="24" height="24" viewBox="0 0 24 24">
+                  <use xlink:href="images/sprites/main.stack.svg#image-google-logo"></use>
+                </svg>Sign in with Google</a><a class="button button--accent" href="#signIn-email">Sign in with email</a></div><span class="popup__caption">Don’t have an account? <a href="#signUp">Sign up                   </a></span>
+          </div>
+        </div>
+      </div>
+      <div class="signIn popup" id="signIn-email"><a class="popup__control popup__back" href="#signIn">
+          <svg class="icon" width="18" height="18" viewBox="0 0 18 18">
+            <use xlink:href="images/sprites/main.stack.svg#image-angle"></use>
+          </svg></a>
+        <div class="popup__control popup__close"> 
+          <svg class="icon" width="16" height="16" viewBox="0 0 16 16">
+            <use xlink:href="images/sprites/main.stack.svg#image-cross"></use>
+          </svg>
+        </div>
+        <div class="popup__main"> 
+          <div class="popup__logo"><img src="images/app-icon.svg" alt="Sleep Stories Logo"></div>
+          <div class="popup__box signIn__step signIn__step--1"><span class="popup__title">Sign in with email</span>
+            <div class="popup__info">
+              <p>Sign into your account to listen on all devices</p>
+            </div>
+            <form class="popup__buttons"> 
+              <div class="input">
+                <input type="email" placeholder="Email Address">
+              </div>
+              <button class="button button--accent" type="submit">Sign in</button>
+            </form><span class="popup__caption">Don’t have an account? <a href="#signUp">Sign up               </a></span>
+          </div>
+          <div class="popup__box signIn__step signIn__step--2 hidden"><span class="popup__title">Check your inbox</span>
+            <div class="popup__info">
+              <p>Sign in using the link we’ve sent to your inbox</p>
+            </div>
+            <div class="loader loader--ready">
+              <svg class="icon" width="20" height="14" viewBox="0 0 20 14">
+                <use xlink:href="images/sprites/main.stack.svg#image-tick"></use>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="signUp popup" id="signUp">
+        <div class="popup__control popup__close"> 
+          <svg class="icon" width="16" height="16" viewBox="0 0 16 16">
+            <use xlink:href="images/sprites/main.stack.svg#image-cross"></use>
+          </svg>
+        </div>
+        <div class="popup__main"> 
+          <div class="popup__logo"><img src="images/app-icon.svg" alt="Sleep Stories Logo"></div>
+          <div class="popup__box"><span class="popup__title">Sign up</span>
+            <div class="popup__info">
+              <p>Create an account to listen on all devices</p>
+            </div>
+            <div class="popup__buttons"> <a class="button button--apple" href="#"> 
+                <svg class="icon" width="24" height="24" viewBox="0 0 24 24">
+                  <use xlink:href="images/sprites/main.stack.svg#image-apple-logo"></use>
+                </svg>Sign in with Apple</a><a class="button button--google" href="#">
+                <svg class="icon" width="24" height="24" viewBox="0 0 24 24">
+                  <use xlink:href="images/sprites/main.stack.svg#image-google-logo"></use>
+                </svg>Sign in with Google</a><a class="button button--accent" href="#signUp-email">Sign up with email</a></div>
+          </div>
+        </div>
+      </div>
+      <div class="signUp popup" id="signUp-email"><a class="popup__control popup__back" href="#signUp">
+          <svg class="icon" width="18" height="18" viewBox="0 0 18 18">
+            <use xlink:href="images/sprites/main.stack.svg#image-angle"></use>
+          </svg></a>
+        <div class="popup__control popup__close"> 
+          <svg class="icon" width="16" height="16" viewBox="0 0 16 16">
+            <use xlink:href="images/sprites/main.stack.svg#image-cross"></use>
+          </svg>
+        </div>
+        <div class="popup__main"> 
+          <div class="popup__logo"><img src="images/app-icon.svg" alt="Sleep Stories Logo"></div>
+          <div class="popup__box"><span class="popup__title">Sign up with email</span>
+            <div class="popup__info">
+              <p>Create an account to listen on all devices</p>
+            </div>
+            <form class="popup__buttons"> 
+              <div class="input">
+                <input type="email" placeholder="Email Address">
+              </div>
+              <button class="button button--accent" type="submit">Sign up</button>
+            </form><span class="popup__caption">By clicking Sign up you agree to <a href="#SignUp">Privacy Policy                      </a></span>
+          </div>
+        </div>
+      </div>
+      <div class="premium popup" id="premium">
+        <div class="popup__control popup__close"> 
+          <svg class="icon" width="16" height="16" viewBox="0 0 16 16">
+            <use xlink:href="images/sprites/main.stack.svg#image-cross"></use>
+          </svg>
+        </div>
+        <div class="popup__main"> 
+          <div class="popup__logo"><img src="images/app-premium.svg" alt="Sleep Stories Logo"></div>
+          <div class="popup__box"><span class="popup__title">Sleep Story<span>Premium</span></span>
+            <div class="premium__info"> 
+              <div class="premium__col premium__benefits"><span class="premium__subtitle">Subscribe & enjoy all benefits:</span>
+                <ul> 
+                  <li>Access to Full Catalog</li>
+                  <li>New content each week</li>
+                  <li>Listen on any platform<span>iOS, Android, watchOS, Smart TV, macOS, visionOS</span></li>
+                  <li>Use account on up to 5 devices</li>
+                  <li>Remove Ads</li>
+                </ul>
+              </div>
+              <div class="premium__col"><span class="premium__subtitle">Select Plan</span>
+                <div class="premium__plans"> 
+                  <label class="premium__plan"> 
+                    <input type="radio" name="plan" value="monthly"><span class="premium__item"> <span class="premium__name">Monthly</span><span class="premium__price">$9.99/month</span></span>
+                  </label>
+                  <label class="premium__plan"> 
+                    <input type="radio" name="plan" value="yearly" checked><span class="premium__item"> <span class="premium__tag">-20%</span><span class="premium__name">Yearly</span><span class="premium__price">$95.99/year</span></span>
+                  </label>
+                  <label class="premium__plan premium__plan--full"> 
+                    <input type="radio" name="plan" value="lifetime"><span class="premium__item"> <span class="premium__tag">Best Value</span><span class="premium__name">Lifetime</span><span class="premium__price">$149.99</span></span>
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="popup__buttons"> <a class="button button--accent" href="#">Subscribe for $95.99 per Year</a></div><span class="popup__caption">Subscription legal text example. Subscription legal text example. Subscription legal text example. Subscription legal text example.           </span>
+          </div>
+        </div>
+      </div>
+      <div class="premium premium--sale popup" id="premiumSale">
+        <div class="popup__control popup__close"> 
+          <svg class="icon" width="16" height="16" viewBox="0 0 16 16">
+            <use xlink:href="images/sprites/main.stack.svg#image-cross"></use>
+          </svg>
+        </div>
+        <div class="popup__main"> 
+          <div class="popup__logo"><img src="images/app-premium.svg" alt="Sleep Stories Logo"></div>
+          <div class="popup__box"><span class="popup__title">Sleep Story Premium<span>50% off!</span></span>
+            <div class="premium__info"> 
+              <div class="premium__col premium__benefits"><span class="premium__subtitle">Subscribe & enjoy all benefits:</span>
+                <ul> 
+                  <li>Access to Full Catalog</li>
+                  <li>New content each week</li>
+                  <li>Listen on any platform<span>iOS, Android, watchOS, Smart TV, macOS, visionOS</span></li>
+                  <li>Use account on up to 5 devices</li>
+                  <li>Remove Ads</li>
+                </ul>
+              </div>
+              <div class="premium__col"><span class="premium__subtitle">Select Plan</span>
+                <div class="premium__plans"> 
+                  <label class="premium__plan"> 
+                    <input type="radio" name="plan" value="monthly"><span class="premium__item"> <span class="premium__name">Monthly</span><span class="premium__price"> <span>$9.99</span>$4.99/month</span></span>
+                  </label>
+                  <label class="premium__plan"> 
+                    <input type="radio" name="plan" value="yearly" checked><span class="premium__item"> <span class="premium__tag">-20%</span><span class="premium__name">Yearly</span><span class="premium__price"> <span>$95.99</span>$47.99/year</span></span>
+                  </label>
+                  <label class="premium__plan premium__plan--full"> 
+                    <input type="radio" name="plan" value="lifetime"><span class="premium__item"> <span class="premium__tag">Best Value</span><span class="premium__name">Lifetime</span><span class="premium__price"> <span>$149.99</span>$74.99</span></span>
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="popup__buttons"> <a class="button button--accent" href="#">Subscribe for $95.99 per Year</a></div><span class="popup__caption">Subscription legal text example. Subscription legal text example. Subscription legal text example. Subscription legal text example.           </span>
+          </div>
+        </div>
+      </div>
+      <div class="user-profile popup" id="user-profile-premium">
+        <div class="popup__control user-profile__nav">
+          <svg class="icon" width="32" height="32" viewBox="0 0 32 32">
+            <use xlink:href="images/sprites/main.stack.svg#image-options"></use>
+          </svg>
+          <ul class="user-profile__menu list-reset">
+            <li><a class="user-profile__link" href="#">Sign out</a></li>
+            <li> <a class="user-profile__link user-profile__link--red" href="#delete">Delete Account</a></li>
+          </ul>
+        </div>
+        <div class="popup__control popup__close"> 
+          <svg class="icon" width="16" height="16" viewBox="0 0 16 16">
+            <use xlink:href="images/sprites/main.stack.svg#image-cross"></use>
+          </svg>
+        </div>
+        <div class="popup__main"> 
+          <div class="popup__image">
+            <picture class="picture">
+              <source srcset="images/avatar.webp, images/avatar@2x.webp 2x" type="image/webp"/><img src="images/avatar.jpg" srcset="images/avatar.jpg, images/avatar@2x.jpg 2x" alt=""/>
+            </picture>
+          </div>
+          <div class="popup__box"><span class="popup__title">John Appleseed</span>
+            <div class="popup__info">
+              <p>john.appleseed@gmail.com</p>
+            </div>
+            <ul class="user-profile__inner list-reset">
+              <li> 
+                <div class="user-profile__info">Monthly Premium <span>Next Billing on September 15, 2023</span></div>
+              </li>
+              <li> <a class="user-profile__link user-profile__link--accent" href="#premium">Upgrade Plan</a></li>
+              <li> <a class="user-profile__link" href="#">Cancel Subscription</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="user-profile popup" id="user-profile">
+        <div class="popup__control user-profile__nav">
+          <svg class="icon" width="32" height="32" viewBox="0 0 32 32">
+            <use xlink:href="images/sprites/main.stack.svg#image-options"></use>
+          </svg>
+          <ul class="user-profile__menu list-reset">
+            <li><a class="user-profile__link" href="#">Sign out</a></li>
+            <li> <a class="user-profile__link user-profile__link--red" href="#delete">Delete Account</a></li>
+          </ul>
+        </div>
+        <div class="popup__control popup__close"> 
+          <svg class="icon" width="16" height="16" viewBox="0 0 16 16">
+            <use xlink:href="images/sprites/main.stack.svg#image-cross"></use>
+          </svg>
+        </div>
+        <div class="popup__main"> 
+          <div class="popup__image">
+            <picture class="picture">
+              <source srcset="images/avatar.webp, images/avatar@2x.webp 2x" type="image/webp"/><img src="images/avatar.jpg" srcset="images/avatar.jpg, images/avatar@2x.jpg 2x" alt=""/>
+            </picture>
+          </div>
+          <div class="popup__box"><span class="popup__title">John Appleseed</span>
+            <div class="popup__info">
+              <p>john.appleseed@gmail.com</p>
+            </div>
+            <div class="user-profile__premium"><span class="premium__subtitle">Select Plan</span>
+              <div class="premium__plans"> 
+                <label class="premium__plan"> 
+                  <input type="radio" name="plan" value="monthly"><span class="premium__item"> <span class="premium__name">Monthly</span><span class="premium__price"> <span>$9.99</span>$4.99/month</span></span>
+                </label>
+                <label class="premium__plan"> 
+                  <input type="radio" name="plan" value="yearly" checked><span class="premium__item"> <span class="premium__tag">-20%</span><span class="premium__name">Yearly</span><span class="premium__price"> <span>$95.99</span>$47.99/year</span></span>
+                </label>
+                <label class="premium__plan premium__plan--full"> 
+                  <input type="radio" name="plan" value="lifetime"><span class="premium__item"> <span class="premium__tag">Best Value</span><span class="premium__name">Lifetime</span><span class="premium__price"> <span>$149.99</span>$74.99</span></span>
+                </label>
+              </div>
+            </div>
+            <div class="popup__buttons"> <a class="button button--accent" href="#signIn-email">Subscribe for $47.99 per Year</a></div><span class="popup__caption">Subscription legal text example. Subscription legal text example.</span>
+          </div>
+        </div>
+      </div>
+      <div class="delete popup" id="delete">
+        <div class="popup__control popup__close"> 
+          <svg class="icon" width="16" height="16" viewBox="0 0 16 16">
+            <use xlink:href="images/sprites/main.stack.svg#image-cross"></use>
+          </svg>
+        </div>
+        <div class="popup__main"> 
+          <div class="popup__image"><img src="images/warning.svg" alt=""></div>
+          <div class="popup__box"><span class="popup__title">Delete Account?</span>
+            <div class="popup__info">
+              <p>Your information will be permanently deleted. </p>
+              <p>This can’t be undone</p>
+            </div>
+            <div class="popup__buttons"> <a class="button button--active" href="#">Keep Account</a><a class="button button--red" href="#">Delete Account</a></div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__main"> 
+          <div class="footer__logos"><a class="custom-logo custom-logo--mob" href="./index.html"><img src="images/app-icon.svg" alt="Sleep Stories Logo">
+              <div class="custom-logo__info"><span class="custom-logo__tagline">Get the app</span><span class="custom-logo__title">Sleep Story</span></div></a>
+            <div class="footer__apps"><a class="logo" href="#"><img src="images/appstore.svg" alt="App Store"></a><a class="logo" href="#"><img src="images/googleplay.svg" alt="Google Play"></a></div>
+          </div>
+          <nav class="footer__menu"> 
+            <ul class="list-reset">
+              <li><a class="footer__link" href="#">Terms & Conditions</a></li>
+              <li><a class="footer__link" href="#">Privacy Policy</a></li>
+              <li><a class="footer__link" href="#">Contact Us</a></li>
+              <li><a class="footer__link" href="#">Cookie Policy</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="footer__bottom"> <span class="footer__copy">© 2023 Sleep Stories</span>
+          <ul class="footer__langs list-reset">
+            <li><a class="footer__lang footer__lang--active" href="#">English</a></li>
+            <li><a class="footer__lang" href="#">Français</a></li>
+            <li><a class="footer__lang" href="#">عربي</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <div class="player">
+      <div class="player__overlay"></div>
+      <div class="player__top"><span class="player__caption">Playing from</span><span class="player__playlist">Travel</span>
+        <button class="player__button player__close" type="button">
+          <svg class="icon" width="16" height="16" viewBox="0 0 16 16">
+            <use xlink:href="images/sprites/main.stack.svg#image-cross"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="player__box">
+        <div class="player__cover" data-flip-id="cover"> 
+          <picture class="picture">
+            <source srcset="images/cover.webp, images/cover@2x.webp 2x" type="image/webp"/><img src="images/cover.jpg" srcset="images/cover.jpg, images/cover@2x.jpg 2x" alt=""/>
+          </picture>
+        </div><span class="player__title" data-flip-id="title">Sound Title</span><span class="player__artist" data-flip-id="artist">Artist Name</span>
+        <div class="player__mob-controls">
+          <div class="player__playback"> <span class="player__progress-time">0:15</span>
+            <div class="player__playback-bar">
+              <input type="range" step="1" min="0" max="100" value="38" data-property="horizontal">
+            </div><span class="player__duration">-3:24</span>
+          </div>
+          <div class="player__buttons">
+            <button class="player__button player__prev" type="button">
+              <svg class="icon" width="24" height="24" viewBox="0 0 24 24">
+                <use xlink:href="images/sprites/main.stack.svg#image-play-prev"></use>
+              </svg>
+            </button>
+            <button class="player__button player__play" type="button">
+              <svg class="icon--pause icon" width="32" height="32" viewBox="0 0 32 32">
+                <use xlink:href="images/sprites/main.stack.svg#image-pause"></use>
+              </svg>
+              <svg class="icon--play icon" width="32" height="32" viewBox="0 0 32 32">
+                <use xlink:href="images/sprites/main.stack.svg#image-play"></use>
+              </svg>
+            </button>
+            <button class="player__button player__next" type="button">
+              <svg class="icon" width="24" height="24" viewBox="0 0 24 24">
+                <use xlink:href="images/sprites/main.stack.svg#image-play-next"></use>
+              </svg>
+            </button>
+          </div>
+          <div class="player__sound"> 
+            <button class="player__button player__volume" type="button"><svg class="icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g class="volume-on">
+<path class="volume-main" d="m3 10v4c0 0.6 0.4 1 1 1h2c0.6 0 1.1 0.2 1.4 0.6l2.9 2.8c0.6 0.6 1.7 0.1 1.7-0.8v-11.2c0-0.9-1.1-1.4-1.7-0.8l-2.9 2.8c-0.3 0.4-0.8 0.6-1.4 0.6h-2c-0.6 0-1 0.4-1 1z" stroke="currentColor" stroke-width="2"/>
+<path class="volume-loud" d="m18.7 6c1.4 1.6 2.3 3.7 2.3 6 0 2.3-0.9 4.4-2.3 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+<path class="volume-normal" d="m16 15c0.6-0.8 1-1.9 1-3 0-1.1-0.4-2.2-1-3" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+</g>
+<g class="volume-off">
+<path d="m2.3 9q-0.3 0.4-0.3 1v4c0 1.1 0.9 2 2 2h2q0.4 0 0.7 0.3l2.9 2.8c0.8 0.8 2.1 0.7 2.8 0l-3.9-3.9-0.4-0.4c-0.5-0.5-1.3-0.8-2.1-0.8h-2v-3.3z" fill="currentColor"/>
+<path d="m11 9.2v-2.8l-1.4 1.4-1.5-1.4 1.5-1.5c1.3-1.2 3.4-0.3 3.4 1.5v4.8z" fill="currentColor"/>
+<path d="m2.5 5l14 14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+</g>
+</svg>
+            </button>
+            <div class="player__sound-bar">
+              <input type="range" step="1" min="0" max="100" value="50" data-property="horizontal">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="player__bar">
+        <div class="player__track"> 
+          <div class="player__preview" data-flip-id="cover">
+            <picture class="picture">
+              <source srcset="images/cover.webp, images/cover@2x.webp 2x" type="image/webp"/><img src="images/cover.jpg" srcset="images/cover.jpg, images/cover@2x.jpg 2x" alt=""/>
+            </picture>
+          </div>
+          <div class="player__track-info"> <span class="player__title" data-flip-id="title">Sound Title</span><span class="player__artist" data-flip-id="artist">Artist Name</span></div>
+        </div>
+        <div class="player__controls">
+          <div class="player__buttons"> 
+            <button class="player__button player__prev" type="button">
+              <svg class="icon" width="24" height="24" viewBox="0 0 24 24">
+                <use xlink:href="images/sprites/main.stack.svg#image-play-prev"></use>
+              </svg>
+            </button>
+            <button class="player__button player__play" type="button">
+              <svg class="icon--pause icon" width="32" height="32" viewBox="0 0 32 32">
+                <use xlink:href="images/sprites/main.stack.svg#image-pause"></use>
+              </svg>
+              <svg class="icon--play icon" width="32" height="32" viewBox="0 0 32 32">
+                <use xlink:href="images/sprites/main.stack.svg#image-play"></use>
+              </svg>
+            </button>
+            <button class="player__button player__next" type="button">
+              <svg class="icon" width="24" height="24" viewBox="0 0 24 24">
+                <use xlink:href="images/sprites/main.stack.svg#image-play-next"></use>
+              </svg>
+            </button>
+          </div>
+          <div class="player__playback"> <span class="player__progress-time">0:15</span>
+            <div class="player__playback-bar">
+              <input type="range" step="1" min="0" max="100" value="38" data-property="horizontal">
+            </div><span class="player__duration">-3:24</span>
+          </div>
+        </div>
+        <div class="player__additional"> 
+          <div class="player__sound"> 
+            <button class="player__button player__volume" type="button"><svg class="icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g class="volume-on">
+<path class="volume-main" d="m3 10v4c0 0.6 0.4 1 1 1h2c0.6 0 1.1 0.2 1.4 0.6l2.9 2.8c0.6 0.6 1.7 0.1 1.7-0.8v-11.2c0-0.9-1.1-1.4-1.7-0.8l-2.9 2.8c-0.3 0.4-0.8 0.6-1.4 0.6h-2c-0.6 0-1 0.4-1 1z" stroke="currentColor" stroke-width="2"/>
+<path class="volume-loud" d="m18.7 6c1.4 1.6 2.3 3.7 2.3 6 0 2.3-0.9 4.4-2.3 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+<path class="volume-normal" d="m16 15c0.6-0.8 1-1.9 1-3 0-1.1-0.4-2.2-1-3" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+</g>
+<g class="volume-off">
+<path d="m2.3 9q-0.3 0.4-0.3 1v4c0 1.1 0.9 2 2 2h2q0.4 0 0.7 0.3l2.9 2.8c0.8 0.8 2.1 0.7 2.8 0l-3.9-3.9-0.4-0.4c-0.5-0.5-1.3-0.8-2.1-0.8h-2v-3.3z" fill="currentColor"/>
+<path d="m11 9.2v-2.8l-1.4 1.4-1.5-1.4 1.5-1.5c1.3-1.2 3.4-0.3 3.4 1.5v4.8z" fill="currentColor"/>
+<path d="m2.5 5l14 14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+</g>
+</svg>
+            </button>
+            <div class="player__sound-bar">
+              <input type="range" step="1" min="0" max="100" value="50" data-property="horizontal">
+            </div>
+          </div>
+          <button class="player__button player__full" type="button">
+            <svg class="icon" width="24" height="24" viewBox="0 0 24 24">
+              <use xlink:href="images/sprites/main.stack.svg#image-expand"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+    <script src="js/main.min.js"></script>
+  </body>
+</html>
