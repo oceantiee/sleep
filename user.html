@@ -25,7 +25,10 @@
   <body>
     <header class="header">
       <div class="container">
-        <div class="header__wrap"> <a class="custom-logo" href="./index.html"><img src="images/app-icon.svg" alt="Sleep Stories Logo">
+        <div class="header__wrap"> <a class="custom-logo" href="./index.html">
+            <picture class="picture">
+              <source srcset="images/logo.webp, images/logo@2x.webp 2x" type="image/webp"/><img src="images/logo.png" srcset="images/logo.png, images/logo@2x.png 2x" alt=""/>
+            </picture>
             <div class="custom-logo__info"><span class="custom-logo__tagline">Get the app</span><span class="custom-logo__title">Sleep Story</span></div></a>
           <nav class="menu"> 
             <ul class="menu__list list-reset"> 
@@ -42,7 +45,15 @@
           <div class="user-nav"><a class="user" href="#user-profile-premium"> 
               <picture class="picture">
                 <source srcset="images/avatar.webp, images/avatar@2x.webp 2x" type="image/webp"/><img src="images/avatar.jpg" srcset="images/avatar.jpg, images/avatar@2x.jpg 2x" alt=""/>
-              </picture></a><a class="button button--accent" href="#premium" data-premium> <svg class="icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g filter="url(#b)" clip-path="url(#a)"><path d="M11.103 3.817a1 1 0 0 1 1.794 0l1.81 3.666a1 1 0 0 0 .752.548l4.046.587a1 1 0 0 1 .555 1.706l-2.928 2.854a1 1 0 0 0-.288.885l.691 4.03a1 1 0 0 1-1.45 1.054l-3.62-1.902a1 1 0 0 0-.93 0l-3.62 1.902a1 1 0 0 1-1.45-1.054l.69-4.03a1 1 0 0 0-.287-.885L3.94 10.324a1 1 0 0 1 .555-1.706l4.046-.587a1 1 0 0 0 .753-.548l1.81-3.666Z" fill="url(#c)"/></g><defs><linearGradient id="c" x1="4" y1="4" x2="20" y2="20" gradientUnits="userSpaceOnUse"><stop offset="100" stop-color="#FFEB45"/><stop offset="1" stop-color="#FFC545"/></linearGradient><clipPath id="a"><path fill="#fff" d="M0 0h24v24H0z"/></clipPath><filter id="b" x="-.363" y=".26" width="24.727" height="24.005" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feColorMatrix in="SourceAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/><feOffset dy="1"/><feGaussianBlur stdDeviation="2"/><feComposite in2="hardAlpha" operator="out"/><feColorMatrix values="0 0 0 0 1 0 0 0 0 0.921569 0 0 0 0 0.270588 0 0 0 0.16 0"/><feBlend in2="BackgroundImageFix" result="effect1_dropShadow_1001_6596"/><feBlend in="SourceGraphic" in2="effect1_dropShadow_1001_6596" result="shape"/></filter></defs></svg>Get Premium</a>
+              </picture></a><a class="button button--accent" href="#premium" data-premium> <svg class="icon" width="24" height="24" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M8.32745 2.86274C8.60256 2.3053 9.39744 2.3053 9.67255 2.86274L11.0297 5.61261C11.1389 5.83396 11.3501 5.98739 11.5944 6.02289L14.6291 6.46385C15.2442 6.55324 15.4898 7.30922 15.0447 7.74312L12.8488 9.88359C12.672 10.0559 12.5914 10.3041 12.6331 10.5474L13.1515 13.5698C13.2566 14.1825 12.6135 14.6497 12.0633 14.3605L9.34901 12.9335C9.13051 12.8186 8.86949 12.8186 8.65099 12.9335L5.93672 14.3605C5.3865 14.6497 4.74342 14.1825 4.8485 13.5698L5.36688 10.5474C5.40861 10.3041 5.32795 10.0559 5.15119 9.88359L2.95529 7.74312C2.51015 7.30922 2.75578 6.55324 3.37095 6.46385L6.4056 6.02289C6.64989 5.98739 6.86106 5.83396 6.97031 5.61261L8.32745 2.86274Z" fill="url(#paint0_linear_1054_4385)"/>
+<defs>
+<linearGradient id="paint0_linear_1054_4385" x1="3" y1="3" x2="15" y2="15" gradientUnits="userSpaceOnUse">
+<stop offset="100" stop-color="#FFEB45"/>
+<stop offset="1" stop-color="#FFC545"/>
+</linearGradient>
+</defs>
+</svg>Get Premium</a>
             <div class="user-nav__button"> <span> </span></div>
             <div class="user-nav__wrap"> <a class="user-nav__link user-nav__menu user-nav__menu--active" href="#"> 
                 <div class="user-nav__icon">
@@ -55,7 +66,16 @@
                     <use xlink:href="images/sprites/main.stack.svg#image-meditation"></use>
                   </svg>
                 </div>Meditation</a><a class="user-nav__link" href="#premium" data-premium> 
-                <div class="user-nav__icon"><svg class="icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g filter="url(#b2)" clip-path="url(#a2)"><path d="M11.103 3.817a1 1 0 0 1 1.794 0l1.81 3.666a1 1 0 0 0 .752.548l4.046.587a1 1 0 0 1 .555 1.706l-2.928 2.854a1 1 0 0 0-.288.885l.691 4.03a1 1 0 0 1-1.45 1.054l-3.62-1.902a1 1 0 0 0-.93 0l-3.62 1.902a1 1 0 0 1-1.45-1.054l.69-4.03a1 1 0 0 0-.287-.885L3.94 10.324a1 1 0 0 1 .555-1.706l4.046-.587a1 1 0 0 0 .753-.548l1.81-3.666Z" fill="url(#c2)"/></g><defs><linearGradient id="c2" x1="4" y1="4" x2="20" y2="20" gradientUnits="userSpaceOnUse"><stop offset="100" stop-color="#FFEB45"/><stop offset="1" stop-color="#FFC545"/></linearGradient><clipPath id="a2"><path fill="#fff" d="M0 0h24v24H0z"/></clipPath><filter id="b2" x="-.363" y=".26" width="24.727" height="24.005" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feColorMatrix in="SourceAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/><feOffset dy="1"/><feGaussianBlur stdDeviation="2"/><feComposite in2="hardAlpha" operator="out"/><feColorMatrix values="0 0 0 0 1 0 0 0 0 0.921569 0 0 0 0 0.270588 0 0 0 0.16 0"/><feBlend in2="BackgroundImageFix" result="effect1_dropShadow_1001_6596"/><feBlend in="SourceGraphic" in2="effect1_dropShadow_1001_6596" result="shape"/></filter></defs></svg></div>Get Premium</a><a class="user-nav__link" href="#signIn"> 
+                <div class="user-nav__icon"><svg class="icon" width="24" height="24" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M8.32745 2.86274C8.60256 2.3053 9.39744 2.3053 9.67255 2.86274L11.0297 5.61261C11.1389 5.83396 11.3501 5.98739 11.5944 6.02289L14.6291 6.46385C15.2442 6.55324 15.4898 7.30922 15.0447 7.74312L12.8488 9.88359C12.672 10.0559 12.5914 10.3041 12.6331 10.5474L13.1515 13.5698C13.2566 14.1825 12.6135 14.6497 12.0633 14.3605L9.34901 12.9335C9.13051 12.8186 8.86949 12.8186 8.65099 12.9335L5.93672 14.3605C5.3865 14.6497 4.74342 14.1825 4.8485 13.5698L5.36688 10.5474C5.40861 10.3041 5.32795 10.0559 5.15119 9.88359L2.95529 7.74312C2.51015 7.30922 2.75578 6.55324 3.37095 6.46385L6.4056 6.02289C6.64989 5.98739 6.86106 5.83396 6.97031 5.61261L8.32745 2.86274Z" fill="url(#paint10_linear_1054_4385)"/>
+<defs>
+<linearGradient id="paint10_linear_1054_4385" x1="3" y1="3" x2="15" y2="15" gradientUnits="userSpaceOnUse">
+<stop offset="100" stop-color="#FFEB45"/>
+<stop offset="1" stop-color="#FFC545"/>
+</linearGradient>
+</defs>
+</svg>
+                </div>Get Premium</a><a class="user-nav__link" href="#user-profile-premium"> 
                 <div class="user-nav__icon"><img src="images/avatar.jpg" alt="user icon"></div>Profile </a></div>
           </div>
         </div>
@@ -489,7 +509,11 @@
           </svg>
         </div>
         <div class="popup__main"> 
-          <div class="popup__logo"><img src="images/app-icon.svg" alt="Sleep Stories Logo"></div>
+          <div class="popup__logo">
+            <picture class="picture">
+              <source srcset="images/logo.webp, images/logo@2x.webp 2x" type="image/webp"/><img src="images/logo.png" srcset="images/logo.png, images/logo@2x.png 2x" alt=""/>
+            </picture>
+          </div>
           <div class="popup__box"><span class="popup__title">Sign in</span>
             <div class="popup__info">
               <p>Sign into your account to listen on all devices</p>
@@ -514,7 +538,11 @@
           </svg>
         </div>
         <div class="popup__main"> 
-          <div class="popup__logo"><img src="images/app-icon.svg" alt="Sleep Stories Logo"></div>
+          <div class="popup__logo">
+            <picture class="picture">
+              <source srcset="images/logo.webp, images/logo@2x.webp 2x" type="image/webp"/><img src="images/logo.png" srcset="images/logo.png, images/logo@2x.png 2x" alt=""/>
+            </picture>
+          </div>
           <div class="popup__box signIn__step signIn__step--1"><span class="popup__title">Sign in with email</span>
             <div class="popup__info">
               <p>Sign into your account to listen on all devices</p>
@@ -545,7 +573,11 @@
           </svg>
         </div>
         <div class="popup__main"> 
-          <div class="popup__logo"><img src="images/app-icon.svg" alt="Sleep Stories Logo"></div>
+          <div class="popup__logo">
+            <picture class="picture">
+              <source srcset="images/logo.webp, images/logo@2x.webp 2x" type="image/webp"/><img src="images/logo.png" srcset="images/logo.png, images/logo@2x.png 2x" alt=""/>
+            </picture>
+          </div>
           <div class="popup__box"><span class="popup__title">Sign up</span>
             <div class="popup__info">
               <p>Create an account to listen on all devices</p>
@@ -570,7 +602,11 @@
           </svg>
         </div>
         <div class="popup__main"> 
-          <div class="popup__logo"><img src="images/app-icon.svg" alt="Sleep Stories Logo"></div>
+          <div class="popup__logo">
+            <picture class="picture">
+              <source srcset="images/logo.webp, images/logo@2x.webp 2x" type="image/webp"/><img src="images/logo.png" srcset="images/logo.png, images/logo@2x.png 2x" alt=""/>
+            </picture>
+          </div>
           <div class="popup__box"><span class="popup__title">Sign up with email</span>
             <div class="popup__info">
               <p>Create an account to listen on all devices</p>
@@ -756,16 +792,19 @@
     <footer class="footer">
       <div class="container">
         <div class="footer__main"> 
-          <div class="footer__logos"><a class="custom-logo custom-logo--mob" href="./index.html"><img src="images/app-icon.svg" alt="Sleep Stories Logo">
+          <div class="footer__logos"><a class="custom-logo custom-logo--mob" href="./index.html">
+              <picture class="picture">
+                <source srcset="images/logo.webp, images/logo@2x.webp 2x" type="image/webp"/><img src="images/logo.png" srcset="images/logo.png, images/logo@2x.png 2x" alt=""/>
+              </picture>
               <div class="custom-logo__info"><span class="custom-logo__tagline">Get the app</span><span class="custom-logo__title">Sleep Story</span></div></a>
             <div class="footer__apps"><a class="logo" href="#"><img src="images/appstore.svg" alt="App Store"></a><a class="logo" href="#"><img src="images/googleplay.svg" alt="Google Play"></a></div>
           </div>
           <nav class="footer__menu"> 
             <ul class="list-reset">
-              <li><a class="footer__link" href="#">Terms & Conditions</a></li>
-              <li><a class="footer__link" href="#">Privacy Policy</a></li>
-              <li><a class="footer__link" href="#">Contact Us</a></li>
-              <li><a class="footer__link" href="#">Cookie Policy</a></li>
+              <li><a class="footer__link" href="./single.html">Terms & Conditions</a></li>
+              <li><a class="footer__link" href="./single.html">Privacy Policy</a></li>
+              <li><a class="footer__link" href="./single.html">Contact Us</a></li>
+              <li><a class="footer__link" href="./single.html">Cookie Policy</a></li>
             </ul>
           </nav>
         </div>
